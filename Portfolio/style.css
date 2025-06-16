@@ -1,0 +1,341 @@
+/* style.css */
+
+/* GitHub-like dark theme */
+:root {
+    --color-bg-primary: #0d1117;
+    --color-bg-secondary: #161b22;
+    --color-border: #30363d;
+    --color-text-primary: #c9d1d9;
+    --color-text-secondary: #8b949e;
+    --color-accent: #58a6ff;
+    --color-hover: #1f2937;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+header {
+    background: var(--color-bg-secondary);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+nav li:first-child {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--color-text-primary);
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: var(--color-hover);
+}
+
+/* Add container for main content */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1280px;
+    padding: 0 20px;
+}
+
+.box {
+    width: 300px;
+    min-height: 200px;
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.box-content h3 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+}
+
+.box-content p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.view-projects-btn {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-projects-btn:hover {
+    background-color: #1f6feb;
+    transform: translateY(-2px);
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box1 {
+    background-color: var(--color-bg-secondary);
+}
+
+.box2 {
+    background-color: var(--color-bg-secondary);
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 40px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--color-border);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+    color: var(--color-text-primary);
+}
+
+.profile-bio {
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 16px;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-bottom: 40px;
+}
+
+.projects-section h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: var(--color-text-primary);
+}
+
+.tech-stack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+
+.tech-tag {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: 1px solid var(--color-border);
+}
+
+/* Skills Section */
+/* .skills-section {
+    margin-bottom: 40px;
+}
+
+.skills-section h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: var(--color-text-primary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.skill-category {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.skill-category h3 {
+    font-size: 16px;
+    margin: 0 0 16px 0;
+    color: var(--color-text-primary);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: 1px solid var(--color-border);
+} */
+
+/* Services Section */
+.services-section {
+    margin-bottom: 40px;
+}
+
+.services-section h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: var(--color-text-primary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    color: var(--color-text-primary);
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.service-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-stats {
+        justify-content: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        max-width: 100%;
+    }
+}

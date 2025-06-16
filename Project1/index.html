@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Shweta</title>
+    <style>
+        :root {
+            --color-bg-primary: #0d1117;
+            --color-bg-secondary: #161b22;
+            --color-border: #30363d;
+            --color-text-primary: #c9d1d9;
+            --color-text-secondary: #8b949e;
+            --color-accent: #58a6ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-header {
+            background-color: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        .project-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-title {
+            font-size: 24px;
+            color: var(--color-text-primary);
+        }
+
+        .project-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .project-nav a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 6px;
+        }
+
+        .project-nav a:hover {
+            background-color: var(--color-bg-primary);
+        }
+
+        .project-content {
+            background-color: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .project-content h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: var(--color-text-primary);
+        }
+
+        .project-content p {
+            color: var(--color-text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin: 16px 0;
+        }
+
+        .tech-tag {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-secondary);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            border: 1px solid var(--color-border);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--color-accent);
+            text-decoration: none;
+            margin-top: 24px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="project-header">
+        <div class="container">
+            <h1 class="project-title">Project 1</h1>
+            <nav class="project-nav">
+                <a href="../index.html">Home</a>
+                <a href="../Portfolio/index.html">Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="project-content">
+            <h2>Project Overview</h2>
+            <p>This is a detailed description of Project 1. It showcases the implementation of various features and technologies.</p>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+            </div>
+
+            <h2>Features</h2>
+            <ul style="color: var(--color-text-secondary); margin-left: 20px;">
+                <li>Feature 1 description</li>
+                <li>Feature 2 description</li>
+                <li>Feature 3 description</li>
+            </ul>
+
+            <h2>Implementation Details</h2>
+            <p>Detailed explanation of how the project was implemented, including technical decisions and challenges overcome.</p>
+
+            <a href="../index.html" class="back-link">← Back to Home</a>
+        </article>
+    </main>
+</body>
+</html>
