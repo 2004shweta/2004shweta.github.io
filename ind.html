@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Events Example</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        padding: 20px;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Parent Element
+      <div class="child">Child Element</div>
+    </div>
+
+    <script>
+      const parent = document.querySelector('.parent');
+      const child = document.querySelector('.child');
+
+      // Mouseover event on parent.
+      parent.addEventListener('mouseover', () => {
+        console.log('Mouseover on parent');
+      });
+
+      // Mouseenter event on parent.
+      parent.addEventListener('mouseenter', () => {
+        console.log('Mouseenter on parent');
+      });
+
+      // Mouseover event on child.
+      child.addEventListener('mouseover', () => {
+        console.log('Mouseover on child');
+      });
+
+      // Mouseenter event on child.
+      child.addEventListener('mouseenter', () => {
+        console.log('Mouseenter on child');
+      });
+    </script>
+  </body>
+</html>
